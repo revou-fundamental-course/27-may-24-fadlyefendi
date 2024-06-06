@@ -1,11 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fadly Portofolio</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
+
+
+<body class="body">
+    <nav class="header-wrapper">
+        <div class="logo-icon"></div>
+
+        <section class="menu">
+            <button class="button-menu">
+                <a class="nav-item" href="#home">Beranda</a>
+                <a class="nav-item" href="#facilities">Fasilitas</a>
+                <a class="nav-item" href="#message-us">Daftar</a>
+            </button>
+        </section>
+    </nav>
     
+
+    <section class="section-container">
+
+        <!--Beranda-->
+        <section id="home">
+            <header class="header-judul">
+                <h2 class="home-header">Hi <span id="name"></span>, Welcome to my website</h2>
+            </header>
+
+            <article id="isi">
+                <p>Ini Adalah Latihan Website Pertama Saya</p>
+                <button id="ganti-nama">Masukkan Nama</button>
+
+                <div class="banner-container">
+            
+                 <h2 id="pembuka">Mau Belajar Software Engineering Dari Rumah Aja? Tentu Bisa!!!</h2>
+                 <p id="pembuka-p">Ayo daftarkan diri kamu sekarang, dengan mentor yang ahli dan berpengalaman di bidangnya. Tersedia dengan berbagai macam program</p>
+
+                </div>
+            </article>
+        </section>
+
+
+
+        <!--Fasilitas-->
+        <section id="facilities">
+            <header>
+                <h1 class="facilities-list">Program Yang Tersedia</h1>
+            </header>
+
+            <article class="facilities-list">
+                <div>
+                    <div class="facilities-menu" id="regular"></div>
+                    <h5>Regular Program</h5>
+                </div>
+
+                <div>
+                    <div class="facilities-menu" id="exclusive"></div>
+                    <h5>Exclusive Program</h5>
+                </div>
+
+                <div>
+                    <div class="facilities-menu" id="full-stack"></div>
+                    <h5>Full Stack Program</h5>
+                </div>
+
+            </article>
+        </section>
+
+    
+
+        <!--Daftar-->
+        <section id="message-us">
+            <header class="message-us-header">
+                <h1>Formulir Pendaftaran</h1>
+            </header>
+
+            <section class="message-us-section">
+                
+                <!--Form-->
+                <form name="form-input" id="form-input" onsubmit="return validateForm()">
+                    <table class="message-us-form" id="form">
+                        <tr class="table-row">
+                            <td class="label" id="sender-name">Nama</td>
+                            <td>:</td>
+                            <td class="input-table">
+                              <input type="text" name="nama" id="nama" placeholder="Nama Anda" class="input-text"></input>
+                            </td>
+                            <p id="error-msg"></p>
+                        </tr>
+                        <tr class="table-row">
+                            <td class="label" id="sender-birth-date">Tanggal Lahir</td>
+                            <td>:</td>
+                            <td class="input-table">
+                                <input type="date" name="tgl-lahir" id="tgl-lahir" placeholder="Tanggal Lahir" class="input-text"></input>
+                            </td>
+                            <p id="error-msg"></p>
+                        </tr>
+                        <tr class="table-row">
+                            <td class="label" id="sender-gender">Jenis Kelamin</td>
+                            <td>:</td>
+                            <td class="input-table">
+                                <input type="radio" name="jkel" value="Laki-Laki" id="jkel"></input> <label>Laki-Laki</label>
+                                <input type="radio" name="jkel" value="Perempuan" id="jkel"></input> <label>Perempuan</label>
+                            </td>
+                            <p id="error-msg"></p>
+                        </tr>
+        
+                        <tr class="table-row"> 
+                            <td class="label" id="sender-messages">Pesan</td>
+                            <td>:</td>
+                            <td class="input-table">
+                                <textarea name="pesan" id="pesan" placeholder="Ketik disini" class="input-text" class="input-text" rows="10"></textarea>
+                            </td>
+                            <p id="error-msg"></p>
+                        </tr>
+                    </table>
+                    <input type="submit" class="submit" id="btn-submit" value="Submit">
+                </form>
+
+                <!--Result-->
+                <section class="result-container" id="wrapper">
+                    <div class="form-result" id="nama-sender">
+                        <p>Current Time: <span id="current-date"></span> <span id="current-time"></span></p>
+                        <p>Nama: <span id="user-nama"></span></p>
+                        <p>Tanggal Lahir: <span id="user-tgl-lahir"></span></p>
+                        <p>Jenis Kelamin: <span id="user-jkel"></span></p>
+                        <p>Pesan: <span id="user-pesan"></span></p>
+                    </div>
+        
+                </section>
+            </section>
+        </section>
+    </section>
+
+    <hr>
+    <footer>
+        <p>Created by Muhammad Fadly Efendi</p>
+    </footer>
+
+
+    <script src="js/script.js"></script>
 </body>
 </html>

@@ -1,1 +1,271 @@
 /* ini css */
+
+.body {
+    margin: 0px;
+    background-color: aliceblue;
+}
+
+nav { 
+    display: flex;
+    justify-content: space-between;
+    background-color: #154c79;
+}
+
+nav>section {
+    display: flex;
+    align-items: center;
+    background-color: #154c79;
+
+}
+
+
+
+.logo-icon {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-image: url(../asset/logo-icon.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 20px;
+    margin-top: 9px;
+    margin-bottom: 9px;
+}
+
+.button-menu {
+    background-color: #154c79;
+    padding: 20px;
+    text-align: center;
+    border: 0px;
+}
+
+.home-header {
+    font-family: calibri;
+    padding-left: 25px;
+}
+
+#ganti-nama {
+    margin-left: 20px;
+    background-color: aliceblue;
+}
+
+
+.nav-item {
+    border: 1px solid white;
+    padding: 5px;
+    padding-left: 12px;
+    padding-right: 12px;
+    border-radius: 12px;
+    color: white;
+    text-decoration: none;
+ 
+}
+
+article#isi {
+    font-family: calibri;
+    padding-left: 0px;
+}
+
+article>p {
+    margin-left: 20px
+}
+
+
+
+
+.banner-container {
+    height: 300px;
+    border: px solid black;
+    background-image: url(../asset/output-onlinegiftools.gif);
+    background-repeat: no-repeat;
+    background-position: right;
+    margin: auto;
+}
+
+.banner-container>h2 {
+    font-family: calibri;
+    margin-bottom: 20px;
+    line-height: 50x;
+    text-align: start;
+    padding-left: 20px;
+    font-size: 40px;
+    width: 50%;
+    color: #154c79;
+
+}
+
+.banner-container>p {
+    font-family: calibri;
+    margin-bottom: 1px;
+    line-height: 50x;
+    width: 50%;
+    font-weight: ;
+    font-size: 20px;
+    text-align: start;
+    padding-left: 20px;
+    color: black;
+}
+
+#facilities {
+    background-color: aliceblue;
+    height: 250px;
+}
+
+
+.facilities-list {
+    display: flex;
+    justify-content: space-between;
+    font-family: calibri;
+    margin: 30px;
+    color: #154c79;
+    padding: 6px;
+    
+}
+
+header>h1 {
+    padding: 15px;
+}
+
+div>h5 {
+    padding-left: 0px;
+}
+
+
+.facilities-menu {
+    width: 90px;
+    height: 90px; 
+    border: 1px solid black;
+    border-radius: 60px;
+    background-position: center;
+    font-family: calibri;
+}
+
+#regular {
+    background-image: url(../asset/regular.jpg);
+}
+
+
+#exclusive {
+     background-image: url(../asset/exclusivee.jpg);
+}
+
+#full-stack {
+    background-image: url(../asset/fullstack.jpg);
+}
+
+#message-us {
+    background-image: url(../asset/blue-snow.webp);
+}
+
+.message-us-header {
+    font-family: calibri;
+    
+}
+
+.message-us-section {
+    display:flex; 
+    align-content: center;
+    justify-content: start;
+
+}
+
+.message-us-form {
+    margin: 10px;
+}
+
+.table-row{
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    margin-bottom: 10px;
+    font-family: calibri;
+}
+.table-row td.label{
+    width: 150px;
+}
+.table-row td.input-table{
+    margin-left: 11px;
+}
+.table-row td.input-table .input-text{
+    width: 200px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#btn-submit{
+    width: 95%;
+    margin-left: 9px;
+    margin-bottom:10px;
+}
+
+.result-container {
+    width:40%;
+    padding-left: 20px;
+    border: px solid black;
+    
+}
+
+ .form-result {
+    height: 260px;
+    justify-content: end;
+    
+ }
+
+
+footer>p {
+    text-align: end;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 10px;
+}
+
+
+@media screen and (max-width: 600px) and (min-width: 300px) {
+    .header-wrapper {
+        flex-direction: column;
+        
+    }
+
+    .logo-icon {
+        flex-direction: column;
+        position: absolute;
+    }
+
+
+    
+    .menu {
+        flex-direction:  column;
+        height: 70px;
+        padding-left: 130px;
+        
+    }
+
+    .button-menu {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 29px;        
+    }
+
+    .banner-container {
+        background-size: 200px;
+        background-position: right;
+    }
+
+    #pembuka {
+        font-size: 20px;
+    }
+
+    #pembuka-p {
+        font-size: smaller;
+    }
+
+
+    .message-us-section {
+        flex-direction: column;
+        margin-left: 6px;
+    }
+
+    .form-result { 
+        display: flex;
+        flex-direction: column;
+    }
+
+}
